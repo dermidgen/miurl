@@ -1,0 +1,11 @@
+html, body { margin:0; padding:0; font-size:1em; font-family: Arial, sans-serif; }
+section.page { width: 960px; margin:0 auto; }
+header > div.title { float:left; }
+header > div.title h2 { font-size: 1.1em; }
+nav.main { float:right; background-color: #dfdfdf; }
+nav.main ol { margin:0; padding:0; }
+nav.main li { list-style:none; float:left; margin:0; padding:0 1em; background:transparent; }
+nav.main li:hover { background-color: #fff; }
+nav.main li h2 { font-size: 1em; }
+section.body { border-top: 1px solid #666; margin-top: 1em; font-size: 0.95em; }
+section.body .dialog { margin: 1.2em; border: 1px solid #666; background-color:yellow; font-size:1em; padding: 1.3em; text-align:center; }

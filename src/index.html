@@ -1,0 +1,68 @@
+<html>
+<head>
+    <title>MiURL Redirect Writer</title>
+    <link rel="stylesheet" type="text/css" href="miurl.css" />
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="lib/ook-min.js" type="text/javascript"></script>
+    
+    <script type="text/javascript">
+        var ui = ook.Class().mixin(ook.observable);
+        ui.prototype._construct = function() {
+          var self = this;
+          var isRunning = false;
+          
+          var initialSetup = function()
+          {
+            // Gotta wait for the browser for this part
+            $(document).ready(function(){
+            });
+          };
+          
+          this.run = function() {
+              if (isRunning === true) return true;
+              initialSetup();
+              setupBindings();
+              isRunning = true;
+          };
+        };
+        ui.main = function() {
+          var app = ui.getInstance();
+          app.run();
+        };
+        ui.__instance = null;
+        ui.getInstance = function(){
+            if (ui.__instance === null) ui.__instance = new ui();
+            return ui.__instance;
+        };
+        
+        var manager = ook.Class().extend('_DOM_div').mixin(ook.observable);
+        var editor = ook.Class().extend('_DOM_div').mixin(ook.observable);
+        ui.main();
+    </script>
+</head>
+<body>
+    <section class="page">
+        <header>
+            <h1>MiURL Redirect Writer</h1>
+            <p>URL redirects made simple</p>
+            <div class="title"><h2>Dashboard</h2></div>
+            <nav class="main">
+                <ol>
+                    <li><h2><a href="#dashboard">Dashboard</a></h2></li>
+                    <li><h2><a href="#manage">Manage</a></h2></li>
+                    <li><h2><a href="#new">New Config</a></h2></li>
+                </ol>
+            </nav>
+        </header>
+        <div style="clear:both"></div>
+        <section class="body">
+            <div class="dialog">This is a special alert message.</a>
+        </section>
+        <footer>
+        </footer>
+    </section>
+    <div id="t_entry" class="application template">
+        <div 
+    </div>
+</body>
+</html>

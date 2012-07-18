@@ -1,0 +1,4 @@
+{"ts":1342637585834,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1342637621865,"patch":[[{"diffs":[[1,"console.log('Hello World');"]],"start1":0,"start2":0,"length1":0,"length2":27}]],"length":27,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1342637930638,"patch":[[{"diffs":[[-1,"console.log('Hello World"],[1,"require('lib/ook-min.js"],[0,"');"]],"start1":0,"start2":0,"length1":27,"length2":26}]],"length":26,"saved":false}
+{"ts":1342637988454,"patch":[[{"diffs":[[-1,"require"],[1,"importScripts"],[0,"('li"]],"start1":0,"start2":0,"length1":11,"length2":17}]],"length":32,"saved":false}
